@@ -20,7 +20,7 @@ class Production {
     }
 
     public function getTitle() {
-        return $this->$title;
+        return $this->title;
     }
 
 }

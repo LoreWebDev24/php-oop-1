@@ -10,6 +10,20 @@ class Production {
         $this->language = $_language;
         $this->rating = $_rating;
     }
+
+    // public function setFilmName($title)
+    // {
+    //   if (is_string($title)) {
+    //     $this->title = trim($title);
+    //   } else {
+    //     $this->age = 'Titolo Del Film Non Valido';
+    //     var_dump('$title il param. non è corretto');
+    //   }
+    // }
+
+    // public function getFilmName() {
+    //     return $this->$title;
+    // }
 }
 
 $titanic = new Production('Titanic', 'ENGL', 9);
@@ -24,6 +38,5 @@ foreach ($films as $film ) {
     echo $film->language . ' ';
     echo $film->rating . ' ';
 }
-
 
 ?>

@@ -1,6 +1,6 @@
 <?php 
 
-require __DIR__ . './Production.php';
+require __DIR__ . '/models/Production.php';
 
 $titanic = new Production('Titanic', 'ENGL', 9);
 $sharknado = new Production('Sharknado', 'ENGL', 4);

@@ -1,29 +1,6 @@
 <?php 
 
-class Production {
-    public $title;
-    public $language;
-    public $rating;
-
-    function __construct($_title, $_language, $_rating) {
-        // $this->title = $_title;
-        $this->setTitle($_title);
-        $this->language = $_language;
-        $this->rating = $_rating;
-    }
-
-    public function setTitle($title)
-    {
-      if (is_string($title)) {
-        $this->title = trim($title);
-      } 
-    }
-
-    public function getTitle() {
-        return $this->title;
-    }
-
-}
+require __DIR__ . './Production.php';
 
 $titanic = new Production('Titanic', 'ENGL', 9);
 $sharknado = new Production('Sharknado', 'ENGL', 4);
